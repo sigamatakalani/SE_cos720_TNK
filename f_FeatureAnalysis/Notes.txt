@@ -1,0 +1,45 @@
+Each line of the header section of the email was scanned and split by the colon character based on the RFC
+specification for email layouts
+
+Any text before the colon is seen as the header key that follows the colon is seen
+as the header value
+
+The headers (with descriptions) that were found in the complete set of emails were:
+- Received1 (fabricated header)
+Contained the address of the receiving server. Example: by 184.168.221.41 with SMTP id hUFS1mAtWD54sRsA;
+Mon, 14 May 2001 16:39:00 -0700 (PDT).
+-Received2 (fabricated header)
+Contained the address of the sending server as observed by the receiving server. Example: from enron.com (enron.
+com [184.168.221.41]) by mx.google.com with ESMTPS id IA15iqgM3n4tZP; Mon, 14 May 2001 16:39:00
+-0700 (PDT) (version=TLS1_2 cipher=AES128-GCM-SHA256 bits=128/128); Mon, 14 May 2001 16:39:00
+-0700 (PDT).
+1
+-X-Mailer (fabricated header)
+This field was left blank in the emails but usually contain the email program that was used to compose the
+program
+-Message-ID
+The message ID of an email consists of a global unique ID to identify this email. It usually, although not in the
+case of the Enron emails, ends with the domain of the sending server. Example: <18782981.1075855378110.Java-
+Mail.evans@thyme>.
+-Date
+The time stamp the email was sent. This time stamp has a very specific format which is: Day of the week,
+Day Month Year Hour:Minute:Second +/-Time zone offset. Example: Mon, 14 May 2001 16:39:00 -0700
+(PDT)
+-From
+The sender email address. Example: piet.pompies@enron.com.
+-To
+A list of one or more recipient email addresses separated by a comma. Example: johan.kotze@enron.com,
+koos.opperman@enron.com.
+-Bcc
+A list of one or more recipient email addresses of individuals that was added to the blind carbon copy list
+separated by a comma. Example: johan.kotze@enron.com, koos.opperman@enron.com.
+-Cc
+A list of one or more recipient email addresses of individuals that was added to the carbon copy list separated
+by a comma. Example: johan.kotze@enron.com, koos.opperman@enron.com.
+-X-FileName
+The Note Storage Facility (NSF) or Outlook Personal Folders (PST) file name.
+-X-Origin
+Most often this field contained the sender’s surname and firstname’s initial. Example: Mass-F
+-X-Folder
+This header appears to store the folder the email was placed in, in the user’s email program
+-X-bcc
