@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+
+.idea
+a_DataAquisition/*
+b_DataCleaning/__pycache__
+b_DataCleaning/clean_AND_anonymised
+b_DataCleaning/clean_AND_anonymised.zip
